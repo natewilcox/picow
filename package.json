@@ -1,0 +1,10 @@
+{
+  "name": "@natewilcox/picow",
+  "description": "Multiplayer breakout clone",
+  "version": "0.0.1",
+  "workspaces": [
+    "libs/picow-shared",
+    "apps/picow-server",
+    "apps/picow-client"
+  ]
+}

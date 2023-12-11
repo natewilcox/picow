@@ -1,0 +1,37 @@
+{
+  "name": "@natewilcox/picow-server",
+  "version": "0.0.1",
+  "description": "server application for picow",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "clean": "npx rimraf dist && npx rimraf tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000"
+  },
+  "author": "Nathan Wilcox",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natewilcox/picow.git"
+  },
+  "devDependencies": {
+    "@colyseus/testing": "^0.15.0",
+    "@types/mocha": "^10.0.1",
+    "mocha": "^10.2.0",
+    "rimraf": "^5.0.0",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@natewilcox/picow-shared": "*",
+    "@natewilcox/colyseus-nathan": "^0.0.1",
+    "@natewilcox/nathan-core": "^0.0.1",
+    "@colyseus/command": "^0.2.1",
+    "@faker-js/faker": "^8.3.1",
+    "@geckos.io/phaser-on-nodejs": "^1.2.8",
+    "colyseus": "^0.15.8",
+    "phaser": "~3.55.2"
+  }
+}
