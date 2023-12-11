@@ -1,5 +1,5 @@
 {
-  "name": "@natewilcox/picow",
+  "name": "@natewilcox/picow-client",
   "version": "0.0.1",
   "description": "breakout mixed with pong",
   "scripts": {

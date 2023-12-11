@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 import { GameScene } from "./scenes/GameScene";
-import { LobbyScene } from "@natewilcox/mobile-game";
 import { HUD } from "./scenes/HUD";
+import { LobbyScene } from "./scenes/LobbyScene";
 
 const config = {
     type: Phaser.AUTO,
@@ -15,10 +15,12 @@ const config = {
         }
     },
     backgroundColor: 'black',
-    scene: [LobbyScene, GameScene, HUD]
+    scene: [LobbyScene]
 } as Phaser.Types.Core.GameConfig;
 
 const game = new Phaser.Game(config);
+game.scene.add('game', GameScene);
+game.scene.add('hud', HUD);
 
 game.scene.start('lobby', { 
     title: 'PICOW'
