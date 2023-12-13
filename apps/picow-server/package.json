@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/picow-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "server application for picow",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
