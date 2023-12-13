@@ -5,9 +5,6 @@ import { HUD } from "./scenes/HUD";
 import { LobbyScene } from "./scenes/LobbyScene";
 import { addBuildInfo } from "@natewilcox/version-meta";
 
-// adds build info to the window object
-addBuildInfo(data);
-
 const config = {
     type: Phaser.AUTO,
     width: 400,
@@ -30,3 +27,6 @@ game.scene.add('hud', HUD);
 game.scene.start('lobby', { 
     title: 'PICOW'
 });
+
+// adds build info to the window object
+addBuildInfo(data);
