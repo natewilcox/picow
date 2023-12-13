@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/picow-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "breakout mixed with pong",
   "scripts": {
     "start": "parcel index.html -p 8000 --no-cache",
